@@ -8,7 +8,8 @@ namespace Clases_TP1
 {
     public class Numero
     {
-        private double Numero;
+        private double numero;
         
     }
 }
+ 

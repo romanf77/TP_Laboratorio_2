@@ -11,32 +11,30 @@ namespace Clases_TP1
 
         public static double Operar(Numero Numero1, Numero Numero2, String Operador)
         { 
-            double Resultado=0;
-
-            
-            
-            
-            return Resultado;
+            double resultado=0;
+                         
+                  
+            return resultado;
         }
 
 
-        public static string ValidarOperador (string Operador)
+        public static string ValidarOperador (string operador)
         {
-            if (Operador == "+")
+            if (operador == "+")
                 
-                return Operador;
+                return operador;
             
-            else if (Operador == "-")
+            else if (operador == "-")
                 
-                return Operador;
+                return operador;
             
-            else if (Operador == "*")
+            else if (operador == "*")
 
-                return Operador;
+                return operador;
 
-            else if(Operador == "/")
+            else if(operador == "/")
 
-                return Operador;
+                return operador;
 
             else
                 return "+";
