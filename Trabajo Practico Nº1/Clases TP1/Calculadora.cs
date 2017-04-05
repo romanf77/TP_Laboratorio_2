@@ -20,22 +20,10 @@ namespace Clases_TP1
 
         public static string ValidarOperador (string operador)
         {
-            if (operador == "+")
+            if (operador == "+" || operador == "-" || operador == "/" || operador == "*")
                 
                 return operador;
             
-            else if (operador == "-")
-                
-                return operador;
-            
-            else if (operador == "*")
-
-                return operador;
-
-            else if(operador == "/")
-
-                return operador;
-
             else
                 return "+";
          }
