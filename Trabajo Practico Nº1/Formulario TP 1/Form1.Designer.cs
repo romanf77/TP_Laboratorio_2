@@ -44,6 +44,7 @@
             this.btnLimpiar.TabIndex = 0;
             this.btnLimpiar.Text = "CC";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnOperar
             // 
@@ -53,6 +54,7 @@
             this.btnOperar.TabIndex = 1;
             this.btnOperar.Text = "=";
             this.btnOperar.UseVisualStyleBackColor = true;
+            this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
             // 
             // txtNumero1
             // 
@@ -60,6 +62,7 @@
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(85, 20);
             this.txtNumero1.TabIndex = 2;
+            this.txtNumero1.TextChanged += new System.EventHandler(this.txtNumero1_TextChanged);
             // 
             // cmbOperacion
             // 
@@ -103,6 +106,7 @@
             this.Controls.Add(this.btnLimpiar);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
