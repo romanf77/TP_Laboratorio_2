@@ -26,7 +26,7 @@ namespace Formulario_TP_1
         {
             
         }
-
+        //Boton Limpiar: Deja en blanco todos los cuadros de texto y label en el formulario
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             lblResultado.Text = "";
@@ -34,7 +34,8 @@ namespace Formulario_TP_1
             txtNumero2.Text = "";
             cmbOperacion.Text = "";
         }
-
+        //Boton Operar crea e instancia los numeros que se utilizaran para operar, tomandolos desde el cuadro de texto, para luego operar mediante el metodo "Operar" situado en la clase "Calculadora"
+        //luego los asigna a resultado y este es mostrado por el label "lblResultado"
         private void btnOperar_Click(object sender, EventArgs e)
         {
             double Resultado;

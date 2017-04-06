@@ -22,7 +22,7 @@ namespace Clases_TP1
             this.numero = Numero;             
         }
 
-        //Constructor que recibe un string desde el cuadro de texto, lo valida utilizando tryparse y lo carga en numero
+        //Constructor que recibe un numero desde el cuadro de texto, que validara y asignara al atributo "numero" mediante setNumero
         public Numero(string Numero)
         {
             setNumero(Numero);
@@ -35,7 +35,7 @@ namespace Clases_TP1
 
         }
 
-       
+        //Valida el numero ingresado mediante tryparse
         private static double ValidaNumero(string numeroString)
         {
             double numeroValido;
@@ -48,6 +48,8 @@ namespace Clases_TP1
             return numeroValido;
         
         }
+
+        //Asignara el numero ingresado por el cuadro de texto al atributo "numero"
          private void setNumero(string Numero)
          {
              this.numero = ValidaNumero(Numero);                                                         
