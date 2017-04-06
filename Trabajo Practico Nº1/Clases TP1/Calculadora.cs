@@ -15,14 +15,12 @@ namespace Clases_TP1
         public static double Operar(Numero Numero1, Numero Numero2, String Operador)
         { 
                  double resultado=0;
+               
+                 Operador = ValidarOperador(Operador);
 
-                 if (Numero1 != null && Numero2 != null)
+
+                 switch (Operador)
                  {
-                        Operador = ValidarOperador(Operador);
-
-
-                        switch (Operador)
-                        {
 
                             case "+":
 
@@ -46,9 +44,9 @@ namespace Clases_TP1
                                         resultado = Numero1.getNumero() / Numero2.getNumero();
                                 }
                                 break;
-                          }                        
+                  }                        
                         
-                 }                                                                 
+                                                                                  
                  return resultado;                                            
         }
 
